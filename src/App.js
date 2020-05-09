@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Titles from "./components/Titles";
+import Form from "./components/Form.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  //React.Component lives somewhere inside the node modules folder and we are
+  // here creating an instance of App
+
+  render() {
+    return (
+      <div>
+        <a1>
+          HELLO !
+          <Titles />
+          <Form />
+        </a1>
+      </div>
+    );
+  }
 }
 
 export default App;
+//we need to have this export method otherwise will get a compilation error
+//Attempted import error: './App' does not contain a default export (imported as 'App').
