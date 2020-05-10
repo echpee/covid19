@@ -1,6 +1,7 @@
 import React from "react";
 import Titles from "./components/Titles";
 import Form from "./components/Form.js";
+import Covid19 from "./components/Covid19";
 
 class App extends React.Component {
   //React.Component lives somewhere inside the node modules folder and we are
@@ -13,6 +14,7 @@ class App extends React.Component {
           HELLO !
           <Titles />
           <Form />
+          <Covid19/>
         </a1>
       </div>
     );
